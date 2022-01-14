@@ -5,6 +5,8 @@
   become: true
   tags:
     - kubernetes
+    - openshift
+    - openshift.infranodes
   roles:
     - role: gepaplexx.infranodes
 ...
