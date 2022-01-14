@@ -72,8 +72,9 @@ jobs:
           sudo cp /etc/rancher/k3s/k3s.yaml /root/.kube/config
 
       - name: Run Playbook
+        # yamllint disable rule:line-length
         run: >-
-          ansible-playbook -i hosts playbook.yml
+          ansible-playbook -i hosts playbook.yml -e openshift_kubeconfig_file=/root/.kube/config
         env:
           PY_COLORS: 1
           ANSIBLE_FORCE_COLOR: 1
