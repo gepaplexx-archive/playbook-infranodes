@@ -1,0 +1,10 @@
+---
+- name: infranodes
+  hosts:
+    - all
+  become: true
+  tags:
+    - kubernetes
+  roles:
+    - role: gepaplexx.infranodes
+...
