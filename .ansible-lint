@@ -20,7 +20,7 @@ quiet: true
 #   - fake_namespace.fake_collection.fake_module.fake_submodule
 
 mock_roles:
- - gepaplexx.cert_manager
+  - gepaplexx.infranodes
 
 # Enable checking of loop variable prefixes in roles
 # loop_var_prefix: "k8s_"
@@ -60,6 +60,7 @@ enable_list:
 
 # Define required Ansible's variables to satisfy syntax check
 extra_vars:
+  openshift_kubeconfig_file: /root/.kube/config
   # foo: bar
   # multiline_string_variable: |
   #   line1

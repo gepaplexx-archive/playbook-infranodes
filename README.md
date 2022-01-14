@@ -5,7 +5,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/gepaplexx/playbook-cert-manager?style=flat-square)
 ![Maintenance](https://img.shields.io/maintenance/yes/2022?style=flat-square)
 
-<!-- ADD Description here --> 
+<!-- ADD Description here -->
 
 ## License
 
