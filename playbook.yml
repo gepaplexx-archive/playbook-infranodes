@@ -8,5 +8,5 @@
     - openshift
     - openshift.infranodes
   roles:
-    - role: gepaplexx.infranodes
+    - {role: gepaplexx.infranodes, when: ocp_infranodes_count > 0}
 ...
